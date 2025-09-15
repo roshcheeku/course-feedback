@@ -11,12 +11,11 @@ CORS(app)
 # -----------------------------
 # Config
 # -----------------------------
-app.config["SECRET_KEY"] = "supersecretjwtkey"
-app.config["JWT_EXP_DELTA_SECONDS"] = 3600
+app.config["SECRET_KEY"] = "yours_secretkey"
+app.config["JWT_EXP_DELTA_SECONDS"] = "jwt"
 
 # ✅ MongoDB Atlas connection
-client = MongoClient(
-    "mongodb+srv://drroshini16_db_user:RPmF63fvR3eiZvjD@cluster0.pdu4tsr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+client = MongoClient("your mongo db server "
 )
 db = client["student_admin"]
 
